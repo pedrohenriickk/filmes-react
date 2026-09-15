@@ -1,0 +1,62 @@
+.container {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.cabecalho {
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+
+.cabecalho p {
+  color: #595f6b;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.resumo-card {
+  background: #1A1C20;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  padding: 16px;
+  text-align: center;
+}
+
+.resumo-card span {
+  color: #4b5563;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.resumo-card strong {
+  color: #1656b0;
+  font-size: 28px;
+}
+
+.resumo-card.assistidos strong {
+  color: #15803d;
+}
+
+.resumo-card.nassistidos strong {
+  color: #b91c1c;
+}
+
+.lista-filmes {
+  display: grid;
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .resumo {
+    grid-template-columns: 1fr;
+  }
+}
